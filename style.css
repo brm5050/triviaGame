@@ -3,35 +3,40 @@
 	z-index: 1;
 	width:100%;
 	height:1000px;
+	
+	
+}
+body{
+	background: gray;
+	text-align:center;
+}
+.row{
+	text-align: center;
 }
 
-   
+#timer{
+	float:left;
+}
+
+#states{
+	float: left;
+}
+
+#leftside{
+	float:left;
+}
+
+.hidden{
+	display:none;
+}
+
+.show{
+	display: block;
+}
 
 
 
-
-
-
-/* State Scroller for left column */
-    /* #scroller {
-        position: relative;
-    }
-    #scroller .innerScrollArea {
-        overflow: hidden;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
-    #scroller ul {
-        padding: 0;
-        margin: 0;
-        position: relative;
-    }
-    #scroller li {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        position: absolute;
-    } */
+#map{
+	width:100px;
+	height:100px;
+}

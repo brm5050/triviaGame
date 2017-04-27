@@ -23,55 +23,111 @@
 
 
 <div class="jumbotron">
-  <h1>Trivia</h1>
-  <p>Press button to answer stupid questions</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Click It</a></p>
+  <h1>State Trivia</h1>
+  <p>Do You Know Your States??</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Sure Do</a></p>
 </div>
 
-    <div class="container">
+    <div class="container hideBox" > <!-- hidden -->
         <div class="row">
             <h1>State Trivia!!!</h1>
         </div>
 
         <div class="row">
 
-            <div class="col-lg-6">
-            </div>
-
-
-                <div class="row">
+            <div class="col-lg-6" id = "timer">
                     <!-- Timer -->
-                </div>
+                    
 
-
-                <div class="row">
-                    <!-- States Scroll -->
-                    <img src="assets/alabama.png" width="100" height="100" />
-                    <!-- <div id="scroller" style="width: 550px; height: 400px; margin: 0 auto;">
-                        <div class="innerScrollArea">
-                            <ul>
-                                Define photos here
-                                <li><img src="assets/alabama.png" width="100" height="100" /></li>
-                                <li><img src="assets/california.png" width="100" height="100" /></li>
-                                <li><img src="assets/kansas.png" width="100" height="100" /></li>
-                                <li><img src="assets/newMexico.png" width="100" height="100" /></li>
-                                <li><img src="assets/northCarolina.png" width="130" height="100" /></li>
-                                <li><img src="assets/arizona.png" width="100" height="100" /></li>
-                                <li><img src="assets/idaho.png" width="100" height="100" /></li>
-                                <li><img src="assets/newJersey.png" width="100" height="100" /></li>
-                                <li><img src="assets/newYork.png" width="100" height="100" /></li>
-                                <li><img src="assets/texas.png" width="100" height="100" /></li>
-                            </ul>
-                        </div>
-                    </div> -->
-                </div> 
+              <h1>Times Up</h1>
 
 
             </div>
+
+           <!--  <div id="map">
+           <img src="assets/map.png"/ style= "height:100px; width:100px">
+           </div> -->
 
 
             <div class="col-lg-6">
                 <!-- Trivia Scroll -->
+                <div id="trivia">
+
+                    <div id= 'q1' class = questions>
+                    <h1> Question 1 </h1>
+                        <p>What state has a shared border with the largest amount of other states?</p>
+                            <input type="radio" name="qq1" data-type="0">Colorado 
+                            <input type="radio" name="qq1" data-type="0"> Pennsylvania
+                             <input type="radio" name="qq1" value = "correct" data-type="1"> Tennessee 
+                             <input type="radio" name="qq1" data-type="0"> Texas
+                    </div>
+
+                    <div id= 'q2' class = questions>
+                    <h1> Question 2 </h1>
+                        <p>What great construction is located near near Boulder City, Nevada?</p>
+                            <input type="radio" name="qq2" data-type="0">Valley Monument
+                             <input type="radio" name="qq2" data-type="1">Hoover Dam
+                             <input type="radio" name="qq2" data-type="0">Big Ball of String 
+                             <input type="radio" name="qq2" data-type="0">Niagra Falls
+                    </div>
+
+                    <div id= 'q3' class = questions>
+                    <h1> Question 3 </h1>
+                        <p>Which state is the closest to the continent of Africa?</p>
+                            <input type="radio" name="qq3" data-type="0">Florida
+                             <input type="radio" name="qq3" data-type="0">Hawaii 
+                             <input type="radio" name="qq3" data-type="1">Maine 
+                             <input type="radio" name="qq3" data-type="0">South Carolina
+                    </div>
+
+                    <div id= 'q4'>
+                    <h1> Question 4 </h1>
+                        <p>What is the highest point in the United States?</p>
+                            <input type="radio" data-type="0" name="qq4">Mt Ranier 
+                            <input type="radio" data-type="0" name="qq4">Freedom Tower
+                             <input type="radio" data-type="1" name="qq4">Mt Denali
+                              <input type="radio" data-type="0" name="qq4">Colorado Peak
+                    </div>
+
+                    <div id= 'q5'>
+                    <h1> Question 5 </h1>
+                        <p>Which state was the last to become part of the 50 States?</p>
+                            <input type="radio" data-type="0" name="qq5">New Mexico 
+                            <input type="radio" data-type="1" name="qq5">Hawaii 
+                            <input type="radio" data-type="0" name="qq5">South Dakota 
+                            <input type="radio" data-type="0" name="qq5">Alaska
+                    </div>
+
+                    <div id= 'q6'>
+                    <h1> Question 6 </h1>
+                        <p>Which state has the largest land area?</p>
+                            <input type="radio" data-type="0" name="qq6">Florida 
+                            <input type="radio" data-type="0" name="qq6">Texas 
+                            <input type="radio" data-type="0" name="qq6">Rhode Island
+                            <input type="radio" data-type="1" name="qq6">Alaska
+                    </div>
+
+                    <div id= 'q7'>
+                    <h1> Question 7 </h1>
+                        <p>Which state was the first state</p>
+                            <input type="radio" data-type="0" name="qq7">New Jersey 
+                            <input type="radio" data-type="1" name="qq7">Delaware
+                            <input type="radio" data-type="0" name="qq7">Virginia 
+                            <input type="radio" data-type="0" name="qq7">New York
+                    </div>
+
+                    <div id= 'q8'>
+                    <h1> Question 8 </h1>
+                        <p>Which state is home to the Grand Canyon?</p>
+                            <input type="radio" data-type="0" name="qq8">Nevada 
+                            <input type="radio" data-type="0" name="qq8">Utah 
+                            <input type="radio" data-type="0" name="qq8">California
+                            <input type="radio" data-type="1" name="qq8">Arizona
+                    </div>
+
+                </div>
+                <br>
+                <button type="button" id="submit">Submit</button>
 
 
             </div>
